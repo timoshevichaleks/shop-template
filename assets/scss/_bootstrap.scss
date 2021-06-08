@@ -1,0 +1,25 @@
+.form-inline {
+  position: relative;
+
+  flex-wrap: nowrap;
+  .form-control {
+    width: 200px;
+
+    border: 1px solid $color-dark;
+    border-radius: 0;
+    background: transparent;
+  }
+}
+
+.input-group-append {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  button {
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 0;
+    background-color: $color-dark;
+  }
+}
