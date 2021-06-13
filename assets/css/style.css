@@ -14,14 +14,14 @@
 }
 
 .form-inline .form-control {
-  padding-left: 7px;
+  width: 10rem;
   margin-right: 4px;
+  padding-left: 7px;
   border: none;
-  font-size: 1.2rem;
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  width: 10rem;
+  font-size: 1.2rem;
 }
 
 .input-group-append {
@@ -33,9 +33,9 @@
 .input-group-append button {
   padding: 0;
   color: #ffffff;
-  outline: 1px solid #2c71b6;
   border: none;
   border-radius: 0;
+  outline: 1px solid #2c71b6;
   background-color: #2c71b6;
 }
 
@@ -45,15 +45,15 @@
 
 .input-group-append button:hover {
   color: #2c71b6;
-  background-color: #ffffff;
   outline: 1px solid #2c71b6;
+  background-color: #ffffff;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .btn-outline-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-secondary.dropdown-toggle {
-  background-color: #28A745;
-  border-color: #28A745;
+  border-color: #28a745;
+  background-color: #28a745;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
@@ -91,12 +91,12 @@
 }
 
 .dropdown-menu {
-  border-radius: 0;
-  border: none;
   margin-top: 1px;
   -webkit-transform: translateX(-1px);
       -ms-transform: translateX(-1px);
           transform: translateX(-1px);
+  border: none;
+  border-radius: 0;
 }
 
 .dropdown-item:hover {
@@ -111,19 +111,19 @@
   background-image: url(../img/list.svg);
 }
 
-.header {
+.header-menu {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-logo {
-  padding: 5px 0;
   margin-right: 16px;
+  padding: 5px 0;
 }
 
 .header-navbar {
-  padding: 26px 16px;
   margin-right: -15px;
   margin-left: -15px;
+  padding: 26px 16px;
 }
 
 .header-navbar__nav {
@@ -135,14 +135,22 @@
 }
 
 .header-navbar__link {
-  font-size: 1.2rem;
   padding: 0.5rem 0 !important;
   color: #2c71b6;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 .header-navbar__link:hover, .header-navbar__link:focus {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.header-carousel {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header h5 {
+  font-size: 1.8rem;
 }
 
 html {
@@ -182,8 +190,8 @@ body {
   }
   .header-navbar__nav {
     width: calc(100% - 300px);
-    padding-left: 70px;
     padding-right: 30px;
+    padding-left: 70px;
   }
   .header-navbar__item {
     -webkit-box-flex: 1;
@@ -205,10 +213,10 @@ body {
     width: calc(100% - 100px);
   }
   .form-inline .form-control {
-    padding-left: 12px;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    padding-left: 12px;
   }
   .input-group-append {
     margin: 0 6px;

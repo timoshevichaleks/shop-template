@@ -1,5 +1,7 @@
 .header {
-  background-color: rgba($color-light, 0.8);
+  &-menu {
+    background-color: rgba($color-light, 0.8);
+  }
   &-logo {
     margin-right: 16px;
     padding: 5px 0;
@@ -10,7 +12,6 @@
     padding: 26px 16px;
     &__nav {
       margin-right: 2px !important;
-
       @include md-min {
         width: calc(100% - 300px);
         padding-right: 30px;
@@ -20,9 +21,7 @@
     &__item {
       @include md-min {
         flex-grow: 1;
-
         text-align: center;
-
         border-left: 1px solid $color-dark;
       }
       &:last-of-type {
@@ -36,9 +35,7 @@
     }
     &__link {
       padding: 0.5rem 0 !important;
-
       color: $color-dark;
-
       font-size: 1.2rem;
       font-weight: 400;
       &:hover,
@@ -46,5 +43,11 @@
         color: rgba($color-active, 0.7);
       }
     }
+  }
+  &-carousel {
+    background-color: rgba(#000000, 0.3);
+  }
+  h5 {
+    font-size: 1.8rem;
   }
 }
