@@ -7,9 +7,10 @@ html {
 
 body {
   background-image: url(../img/patt.png);
+  // font-family: $font-header;
 
-  font-family: $font-header;
   font-size: $font-size;
+  line-height: 1.5;
 }
 
 .button-icon {

@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SHOP-TEMPLATE</title>
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700%7CRoboto:100,300,400,500,700,900" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700%7CRoboto:100,300,400,500,700,900" rel="stylesheet" /> -->
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/img/icon-1.png" type="image/png">
@@ -15,17 +15,19 @@
 
 <body>
   <header class="header">
-    <nav class="header-navbar navbar navbar-expand-lg header-navbar">
-      <div class="container">
-        <a class="header-logo navbar-brand " href="#"><strong>Logo</strong><span>Here</span></a>
+    <div class="container">
+      <nav class="header-navbar navbar navbar-expand-lg header-navbar">
+        <a class="header-logo navbar-brand " href="#">
+          <img src="assets/img/icon-3.png" alt="Logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="header-navbar navbar-nav mr-auto">
+          <ul class="header-navbar__nav navbar-nav mr-auto">
             <li class="header-navbar__item header-navbar__item--active nav-item active">
-              <a class="header-navbar__link nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="header-navbar__link active nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="header-navbar__item nav-item dropdown">
               <a class="header-navbar__link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,10 +37,12 @@
                 <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
                 <a class="dropdown-item" href="#">Sit amet</a>
                 <a class="dropdown-item" href="#">Consectetur adipisicing</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Tempor incididunt</a>
                 <a class="dropdown-item" href="#">Dolore magna aliqua</a>
                 <a class="dropdown-item" href="#">Ut enim ad minim veniam</a>
                 <a class="dropdown-item" href="#">Quis nostrud</a>
+              </div>
             </li>
             <li class="header-navbar__item nav-item">
               <a class="header-navbar__link nav-link" href="#">Payment</a>
@@ -56,9 +60,9 @@
           <button class="button-icon btn btn-outline-secondary" type="button">
           <i class="fas fa-shopping-cart"></i>
           </button>
-          </div>
         </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
 

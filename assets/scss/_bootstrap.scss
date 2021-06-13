@@ -1,25 +1,153 @@
 .form-inline {
-  position: relative;
-
   flex-wrap: nowrap;
-  .form-control {
-    width: 200px;
 
-    border: 1px solid $color-dark;
-    border-radius: 0;
+  height: 50px;
+
+  border: 1px solid $color-dark;
+  border-radius: 0;
+
+  @include md-min {
+    justify-content: space-evenly;
+
+    width: 218px;
+  }
+  @include md {
+    // margin: 0 !important;
+    display: inline-flex;
+    // justify-content: space-around;
+
+    width: calc(100% - 100px);
+  }
+  .form-control {
+    width: 10rem;
+    margin-right: 4px;
+    padding-left: 7px;
+
+    border: none;
     background: transparent;
+    box-shadow: none;
+
+    font-size: 1.2rem;
+
+    @include md {
+      flex-grow: 2;
+
+      padding-left: 12px;
+    }
   }
 }
 
 .input-group-append {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  align-items: center;
+
+  @include md {
+    margin: 0 6px;
+  }
   button {
-    padding: 5px 10px;
+    padding: 0;
+
+    color: $color-light;
+    border: none;
+    border-radius: 0;
+    outline: 1px solid $color-dark;
+    background-color: $color-dark;
+    i {
+      padding: 10px;
+    }
+    &:hover {
+      color: $color-dark;
+      outline: 1px solid $color-dark;
+      background-color: $color-light;
+    }
+  }
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  border-color: #28a745;
+  background-color: #28a745;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(#28a745, 0.5);
+}
+
+.btn-outline-secondary.focus,
+.btn-outline-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(#28a745, 0.5);
+}
+
+.button-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 1.875rem;
+
+  border: none;
+  border-radius: 0;
+
+  @include md {
+    margin-bottom: 12px;
+  }
+  &:hover {
+    background-color: $color-dark;
+    i {
+      color: $color-light;
+    }
+  }
+  i {
+    color: $color-dark;
+
+    font-size: 1.5rem;
+  }
+}
+
+.navbar-collapse {
+  @include md {
+    // flex-basis: 100%;
+  }
+}
+
+.dropdown {
+  &-menu {
+    margin-top: 1px;
+
+    transform: translateX(-1px);
 
     border: none;
     border-radius: 0;
-    background-color: $color-dark;
+
+    @include md-min {
+      background-color: $color-dark;
+    }
   }
+  &-item {
+    @include md-min {
+      color: $color-light;
+    }
+    &:hover {
+      color: $color-dark;
+    }
+  }
+  &-toggle[aria-expanded="true"] {
+    @include md-min {
+      color: $color-light !important;
+    }
+  }
+}
+
+.show {
+  @include md-min {
+    background-color: $color-dark !important;
+  }
+}
+
+.navbar-expand-lg .navbar-toggler {
+  border-color: rgba($color-active, 0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url(../img/list.svg);
 }
