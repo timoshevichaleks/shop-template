@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 1px solid $color-light;
   &-menu {
     background-color: rgba($color-light, 0.8);
   }
@@ -12,6 +13,7 @@
     padding: 26px 16px;
     &__nav {
       margin-right: 2px !important;
+
       @include md-min {
         width: calc(100% - 300px);
         padding-right: 30px;
@@ -21,7 +23,9 @@
     &__item {
       @include md-min {
         flex-grow: 1;
+
         text-align: center;
+
         border-left: 1px solid $color-dark;
       }
       &:last-of-type {
@@ -35,7 +39,9 @@
     }
     &__link {
       padding: 0.5rem 0 !important;
+
       color: $color-dark;
+
       font-size: 1.2rem;
       font-weight: 400;
       &:hover,
