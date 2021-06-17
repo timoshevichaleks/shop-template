@@ -12,9 +12,7 @@
     width: 218px;
   }
   @include md {
-    // margin: 0 !important;
     display: inline-flex;
-    // justify-content: space-around;
 
     width: calc(100% - 100px);
   }
@@ -101,12 +99,6 @@
     color: $color-dark;
 
     font-size: 1.5rem;
-  }
-}
-
-.navbar-collapse {
-  @include md {
-    // flex-basis: 100%;
   }
 }
 

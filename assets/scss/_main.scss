@@ -1,0 +1,195 @@
+.main {
+  &-breadcrumb {
+    margin-top: 16px;
+
+    color: rgba($color-light, 0.5);
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    span:not(:nth-of-type(1))::before {
+      margin-right: 8px;
+      margin-left: 4px;
+
+      content: ">";
+
+      color: rgba($color-light, 0.5);
+    }
+    a {
+      text-decoration: none;
+
+      color: rgba($color-light, 0.5);
+    }
+  }
+  &-content {
+    &__title {
+      margin: 16px 0 38px 0;
+
+      color: $color-light;
+
+      font-size: 2.85rem;
+    }
+    &__select {
+      width: 100%;
+      margin-top: 22px;
+      padding: 3px 10px 5px;
+
+      color: $color-light;
+      border: 1px solid $color-light;
+      border-radius: 0;
+      background-color: $color-dark;
+
+      font-size: 1.25rem;
+    }
+    &-item {
+      margin-bottom: 30px;
+    }
+  }
+  &-load {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    &__link {
+      color: $color-light;
+
+      font-size: 2rem;
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+.item {
+  &-wrapper {
+    position: relative;
+
+    padding-bottom: 15px;
+
+    color: $color-light;
+    border: 1px solid $color-light;
+    background-color: rgba($color-dark, 0.5);
+  }
+  &-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 180px;
+
+    background-color: rgba($color-light, 0.8);
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+  &-title {
+    padding: 12px 15px 8px;
+    h2 {
+      margin: 0;
+
+      font-size: 1.75rem;
+    }
+  }
+  &-description {
+    margin: 0;
+    padding: 0 15px;
+
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  &-characteristics {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 11px 15px 4px;
+    span {
+      font-size: 1.25rem;
+      line-height: 1.75;
+    }
+  }
+  &-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    display: flex;
+    flex-direction: column;
+    &--link {
+      margin-bottom: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+
+      border: 1px solid $color-dark;
+      i {
+        padding-right: 5px;
+        padding-left: 7px;
+
+        color: $color-dark;
+      }
+      .fa-heart {
+        padding-right: 6px;
+        padding-left: 6px;
+
+        font-weight: 900;
+      }
+      &:hover {
+        background-color: $color-dark;
+        i {
+          color: $color-light;
+        }
+      }
+      &:active {
+        border-color: #28a745;
+        background-color: #28a745;
+        box-shadow: 0 0 0 0.25rem rgba(#28a745, 0.5);
+      }
+    }
+  }
+  &-price {
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &-actions {
+    padding: 0 30px;
+  }
+  &-btn {
+    width: 100%;
+    margin: 15px 0;
+    padding: 8px 0 10px;
+
+    border-color: $color-light;
+    border-radius: 0;
+    background-color: transparent;
+
+    font-size: 1.15rem;
+    font-weight: bold;
+    &--actions {
+      background-color: rgba($color-light, 0.2);
+      i {
+        margin-left: 10px;
+
+        font-size: 1rem;
+      }
+      &:active {
+        border-color: $color-light !important;
+        background-color: rgba($color-light, 0.1) !important;
+        box-shadow: none !important;
+      }
+    }
+    &:hover {
+      transition: 0.5s;
+
+      color: $color-dark;
+      border-color: $color-light;
+      background-color: rgba($color-light, 0.8);
+    }
+    &:first-of-type:active {
+      border-color: #28a745 !important;
+      background-color: #28a745 !important;
+      box-shadow: 0 0 0 0.25rem rgba(#28a745, 0.5) !important;
+    }
+  }
+}
