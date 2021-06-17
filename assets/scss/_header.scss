@@ -56,4 +56,25 @@
   h5 {
     font-size: 1.75rem;
   }
+  &-counter {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+
+    display: none;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+
+    color: $color-light;
+    border-radius: 50%;
+    background-color: $color-dark;
+    box-shadow: 0 0 0.35rem rgba($color-active, 0.7);
+    &:hover {
+      color: $color-dark;
+      background-color: $color-light;
+    }
+  }
 }

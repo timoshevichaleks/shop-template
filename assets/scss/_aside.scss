@@ -2,8 +2,13 @@
   &-form {
     padding: 15px 30px 14px;
 
-    border-right: 1px solid $color-light;
-    background-color: rgba($color-light, 0.25);
+    @include md-min {
+      border-right: 1px solid $color-light;
+      background-color: rgba($color-light, 0.25);
+    }
+    @include md {
+      border-top: 1px solid $color-light;
+    }
     &__title {
       margin-top: 4px;
       margin-bottom: 22px;

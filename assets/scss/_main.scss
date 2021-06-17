@@ -22,15 +22,18 @@
   }
   &-content {
     &__title {
-      margin: 16px 0 38px 0;
+      margin-top: 16px;
 
       color: $color-light;
 
       font-size: 2.85rem;
+
+      @include sm-min {
+        margin-bottom: 38px;
+      }
     }
     &__select {
       width: 100%;
-      margin-top: 22px;
       padding: 3px 10px 5px;
 
       color: $color-light;
@@ -39,6 +42,14 @@
       background-color: $color-dark;
 
       font-size: 1.25rem;
+
+      @include sm-min {
+        margin-top: 22px;
+      }
+      @include sm {
+        margin-top: 6px;
+        margin-bottom: 30px;
+      }
     }
     &-item {
       margin-bottom: 30px;
@@ -77,7 +88,7 @@
 
     height: 180px;
 
-    background-color: rgba($color-light, 0.8);
+    background-color: rgba($color-light, 0.75);
     img {
       width: auto;
       height: auto;
@@ -100,27 +111,41 @@
   }
   &-characteristics {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
-    padding: 11px 15px 4px;
+    padding: 8px 15px 7px;
     span {
+      margin-top: 7px;
+
       font-size: 1.25rem;
-      line-height: 1.75;
+      line-height: 1.75rem;
     }
   }
   &-button {
     position: absolute;
-    top: 5px;
     right: 5px;
 
     display: flex;
     flex-direction: column;
+
+    @include xs-min {
+      top: 5px;
+    }
+    @include xs {
+      top: 13px;
+    }
     &--link {
-      margin-bottom: 5px;
       padding-top: 2px;
       padding-bottom: 2px;
 
       border: 1px solid $color-dark;
+
+      @include xs-min {
+        margin-bottom: 5px;
+      }
+      @include xs {
+        margin-bottom: 8px;
+      }
       i {
         padding-right: 5px;
         padding-left: 7px;
@@ -154,6 +179,10 @@
   }
   &-actions {
     padding: 0 30px;
+
+    @include xs {
+      margin-top: 8px;
+    }
   }
   &-btn {
     width: 100%;
@@ -164,14 +193,25 @@
     border-radius: 0;
     background-color: transparent;
 
-    font-size: 1.15rem;
     font-weight: bold;
+
+    @include md-min {
+      font-size: 1.15rem;
+    }
+    @include md {
+      font-size: 0.9rem;
+    }
     &--actions {
       background-color: rgba($color-light, 0.2);
       i {
-        margin-left: 10px;
-
         font-size: 1rem;
+
+        @include md-min {
+          margin-left: 10px;
+        }
+        @include md {
+          margin-left: 9px;
+        }
       }
       &:active {
         border-color: $color-light !important;
