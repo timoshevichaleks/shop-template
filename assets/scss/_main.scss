@@ -218,6 +218,14 @@
         background-color: rgba($color-light, 0.1) !important;
         box-shadow: none !important;
       }
+      &:disabled {
+        border-color: $color-light !important;
+        background-color: rgba($color-light, 0.1) !important;
+        box-shadow: none !important;
+        &:hover {
+          color: $color-light;
+        }
+      }
     }
     &:hover {
       transition: 0.5s;

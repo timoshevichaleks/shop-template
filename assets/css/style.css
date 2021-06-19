@@ -159,23 +159,23 @@
 }
 
 .header-counter {
-  display: none;
+  position: absolute;
   top: -12px;
   left: -12px;
-  position: absolute;
-  background-color: #2c71b6;
+  display: none;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  color: #ffffff;
   cursor: pointer;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #2c71b6;
   -webkit-box-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.7);
 }
 
 .header-counter:hover {
-  background-color: #ffffff;
   color: #2c71b6;
+  background-color: #ffffff;
 }
 
 html {
@@ -391,6 +391,17 @@ body {
   background-color: rgba(255, 255, 255, 0.1) !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.item-btn--actions:disabled {
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.item-btn--actions:disabled:hover {
+  color: #ffffff;
 }
 
 .item-btn:hover {
