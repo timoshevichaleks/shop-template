@@ -77,4 +77,48 @@
       background-color: $color-light;
     }
   }
+  &-shopping-cart {
+    &__block {
+      position: absolute;
+      z-index: 5;
+      top: 102px;
+      right: 55px;
+
+      display: none;
+
+      padding: 15px;
+
+      background-color: $color-light;
+    }
+    &__list {
+      margin: 0;
+      padding-left: 15px;
+
+      color: $color-dark;
+      &--sum {
+        text-align: center;
+
+        border-bottom: 1px solid $color-dark;
+      }
+    }
+    &__item {
+      margin-bottom: 10px;
+
+      text-align-last: justify;
+
+      font-size: 0.8rem;
+      .fa-trash-alt {
+        margin-left: 20px;
+
+        cursor: pointer;
+        &:hover {
+          color: rgb(179, 9, 9);
+        }
+      }
+    }
+  }
+}
+
+.shop-active {
+  display: block !important;
 }

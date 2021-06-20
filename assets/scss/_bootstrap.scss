@@ -93,11 +93,11 @@
   }
   &:hover {
     background-color: $color-dark;
-    i {
+    .fa-shopping-cart {
       color: $color-light;
     }
   }
-  i {
+  .fa-shopping-cart {
     color: $color-dark;
 
     font-size: 1.5rem;
