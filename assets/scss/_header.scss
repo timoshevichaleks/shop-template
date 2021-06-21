@@ -81,14 +81,29 @@
     &__block {
       position: absolute;
       z-index: 5;
-      top: 102px;
-      right: 55px;
 
       display: none;
 
       padding: 15px;
 
       background-color: $color-light;
+
+      @include md-min {
+        top: 102px;
+        right: 55px;
+      }
+      @include md-sm {
+        top: 345px;
+        right: 100px;
+      }
+      @include sm-xs {
+        top: 345px;
+        right: 50px;
+      }
+      @include xs {
+        top: 345px;
+        right: 50px;
+      }
     }
     &__list {
       margin: 0;

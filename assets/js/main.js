@@ -1,7 +1,6 @@
 const cartCaunterLabel = document.querySelector('#cart-caunter-label');
 const contentContainer = document.querySelector('#content-container');
 const contentHeader = document.querySelector('#header');
-// const shoppingCart = contentHeader.querySelector('#shopping-cart');
 const btnShop = contentHeader.querySelector('#btn-shop');
 const shoppingCart = document.createElement('div');
 const shoppingList = document.createElement('ol');
